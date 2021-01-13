@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomUIPicker" customModule="Odigo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmP-VE-QXE">
+                    <rect key="frame" x="0.0" y="472" width="375" height="195"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="195" id="Hup-rZ-x5E"/>
+                    </constraints>
+                </pickerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bss-Bn-U54">
+                    <rect key="frame" x="0.0" y="414" width="375" height="58"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR5-Pv-kNh">
+                            <rect key="frame" x="0.0" y="0.0" width="95" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Wtp-NL-0Cv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="tintColor" red="0.16078431900000001" green="0.73333334920000004" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.047058823530000002" green="0.8862745098" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Wtp-NL-0Cv"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="KVa-5a-dSm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjf-5r-V1r">
+                            <rect key="frame" x="270" y="0.0" width="105" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="zqD-kL-pZK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="tintColor" red="0.16078431900000001" green="0.73333334920000004" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="Confirm">
+                                <color key="titleColor" red="0.047058823530000002" green="0.8862745098" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="zqD-kL-pZK"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="confirmButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="4VU-CD-AcG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fjf-5r-V1r" secondAttribute="trailing" id="8DP-ls-c6f"/>
+                        <constraint firstAttribute="bottom" secondItem="JR5-Pv-kNh" secondAttribute="bottom" id="92g-hS-MtD"/>
+                        <constraint firstItem="JR5-Pv-kNh" firstAttribute="leading" secondItem="Bss-Bn-U54" secondAttribute="leading" id="HyE-Wm-tiu"/>
+                        <constraint firstAttribute="height" constant="58" id="OvE-zi-uT7"/>
+                        <constraint firstItem="fjf-5r-V1r" firstAttribute="top" secondItem="Bss-Bn-U54" secondAttribute="top" id="QLp-lc-GaK"/>
+                        <constraint firstAttribute="bottom" secondItem="fjf-5r-V1r" secondAttribute="bottom" id="SeJ-CX-dyr"/>
+                        <constraint firstItem="fjf-5r-V1r" firstAttribute="leading" secondItem="JR5-Pv-kNh" secondAttribute="trailing" constant="10" id="cFV-Fb-aox"/>
+                        <constraint firstItem="JR5-Pv-kNh" firstAttribute="top" secondItem="Bss-Bn-U54" secondAttribute="top" id="ddL-jR-iqR"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cFV-Fb-aox"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kmP-VE-QXE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CqL-Oc-Egb"/>
+                <constraint firstItem="kmP-VE-QXE" firstAttribute="top" secondItem="Bss-Bn-U54" secondAttribute="bottom" id="J9S-la-i17"/>
+                <constraint firstItem="kmP-VE-QXE" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="Of6-PE-HW1"/>
+                <constraint firstItem="Bss-Bn-U54" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QWt-nR-GDo"/>
+                <constraint firstAttribute="trailing" secondItem="Bss-Bn-U54" secondAttribute="trailing" id="kfW-1y-cvL"/>
+                <constraint firstItem="kmP-VE-QXE" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="qsK-du-yhj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Zti-9I-1kG"/>
+            <connections>
+                <outlet property="cancelButton" destination="JR5-Pv-kNh" id="NcF-3O-lya"/>
+                <outlet property="confirmButton" destination="fjf-5r-V1r" id="eYf-jf-wnr"/>
+                <outlet property="picker" destination="kmP-VE-QXE" id="Tda-dY-M1c"/>
+                <outlet property="toolBar" destination="Bss-Bn-U54" id="NSd-bf-Rsp"/>
+            </connections>
+            <point key="canvasLocation" x="86.5" y="-71.5"/>
+        </view>
+    </objects>
+</document>
